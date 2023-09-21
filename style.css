@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+
+/* إعدادات عامة للصفحة */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+/* navbar */
+#navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.myNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myNavbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    direction: rtl;
+}
+
+.myNavbar li {
+    direction: rtl;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.myNavbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.myNavbar a:hover {
+    color: #ff9900;
+}
+
+/*background photo*/
+.myphoto {
+    background-image: url('images/back-ground.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* ستايل للشعار */
+.logo {
+    height: 100px;
+    width: 100px;
+    filter: brightness(1.5);
+}
+
+/* home page*/
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content p {
+    font-size: 28px;
+    color: #000;
+}
+
+.primary-text {
+    color: #ff9900;
+}
+
+/* style buotun*/
+.btn-primary {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc66;
+    color: #fff;
+}
+
+/*section page*/
+
+/* about */
+#about .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .title h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#about .title p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* فيديو */
+#about .video-container {
+    position: relative;
+    padding-bottom: 60%;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#about .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.about-content .row p {
+font-size: 28px;
+}
+/* Start Offers */
+#offers {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.title h2 {
+    font-size: 2rem; /* حجم الخط بوحدة rem */
+
+    text-align: center;
+}
+
+.offers-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.offer {
+    flex: 0 1 calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offer h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.offer del {
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.primary-text {
+    color: #ff6600;
+}
+
+.title p {
+    text-align: center;
+    font-size: 25px;
+    color: #9e9e9e;
+    font-weight: 600;
+}
+#offers .offer:hover {
+    transform: translateY(-10px); /* تحريك العنصر لأعلى عند تحويله عند تحويله */
+}
+/* End Offers */
+
+
+
+/* Start Products */
+#products {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+#products .title h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* توسيط النص */
+}
+
+#products .title p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+    text-align: center; /* توسيط النص */
+}
+
+#products .product {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* إضافة حواف مستديرة للعناصر */
+    transition: transform 0.2s; /* تأثير عند التحويل */
+}
+
+#products .product:hover {
+    transform: translateY(-10px); /* تحريك العنصر لأعلى عند تحويله عند تحويله */
+}
+
+#products .product h3 {
+    font-size: 2rem; /* حجم الخط بوحدة rem */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#products .product p {
+    font-size: 16px;
+    color: #666;
+}
+
+#products .product .primary-text {
+    color: #ff6600;
+}
+
+#products .product img {
+    max-width: 100%; /* تأكد من عدم تجاوز الصور لحدود العناصر */
+    height: auto;
+}
+/* End Products */
+
+/* start Contact  */
+#contact {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+#contact .title h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact .title p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+}
+
+#contact .contact-info {
+    padding: 20px 0;
+}
+
+#contact .contact-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+#contact .contact-info form {
+    margin-top: 20px;
+}
+
+#contact .contact-info form .form-group {
+    margin-bottom: 15px;
+}
+
+#contact .contact-info form input[type="text"],
+#contact .contact-info form input[type="email"],
+#contact .contact-info form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact .contact-info form button.btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact .contact-info form button.btn-primary:hover {
+    background-color: #ff4400;
+}
+/*end Contact*/
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    height: 10px; /* ارتفاع الشريط */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mainBgColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor); /* أو يمكنك استخدام صورة كخلفية */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d5d50;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--mainColor);
+}
+/*!      Loading Spinner     */
+
+
+.Loadingspinner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 64684646;
+}
+
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.loader:before,
+.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+}
+
+.loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        box-shadow: .2em 0px 0 0px currentcolor;
+    }
+
+    12% {
+        box-shadow: .2em .2em 0 0 currentcolor;
+    }
+
+    25% {
+        box-shadow: 0 .2em 0 0px currentcolor;
+    }
+
+    37% {
+        box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+
+    50% {
+        box-shadow: -.2em 0 0 0 currentcolor;
+    }
+
+    62% {
+        box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+
+    75% {
+        box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+
+    87% {
+        box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+}
+
+/*!---------------------------- */
+/* استيل للزرار */
+#toggleNavbar {
+    background-color: transparent; /* لجعل الخلفية شفافة */
+    border: none; /* لإزالة حدود الزرار */
+    cursor: pointer; /* لإظهار المؤشر عند التحريك فوق الزرار */
+    transition: background-color 0.3s ease-in-out; /* تأثير تدرج اللون عند التحريك فوق الزرار */
+}
+
+/* تحديد استيل الأيقونة داخل الزرار */
+#toggleNavbar i {
+    font-size: 24px; /* حجم الأيقونة */
+    color: #fff; /* لون الأيقونة */
+}
+
+
+/* تحديد استيل زرار القائمة المفتوحة */
+#toggleNavbar.opened {
+    background-color: #333; /* لون خلفية الزرار عندما تكون القائمة مفتوحة */
+    color: #fff; /* لون النص عندما تكون القائمة مفتوحة */
+}
+
+
+/* تحديد استيل الأيقونة عندما تكون القائمة مفتوحة */
+#toggleNavbar.opened i {
+    color: #fff; /* لون الأيقونة عندما تكون القائمة مفتوحة */
+}
+/* استهداف أجهزة الهاتف */
+
+    /* إعدادات التصميم للهواتف */
+
+    @media (max-width: 768px) {}
+
+/* استهداف أجهزة اللوحية */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* إعدادات التصميم للأجهزة اللوحية */
+}
+
+/* استهداف أجهزة الكمبيوتر */
+@media (min-width: 1025px) {
+    /* إعدادات التصميم لأجهزة الكمبيوتر */
+}
